@@ -7,7 +7,7 @@ You can choose your own folder name. This folder will hold both your design code
 
 From VS Code (or your preferred coding environment), open this folder.
 
-While inside this folder, open a terminal window in the coding environment. Next, you will create the subfolder. To do this, enter the following into the terminal:
+While inside this folder, open a terminal window in the coding environment. Next, you will create the subfolder within a virtual environment. To do this, enter the following into the terminal:
 
 > python3 -m venv myenv
 
