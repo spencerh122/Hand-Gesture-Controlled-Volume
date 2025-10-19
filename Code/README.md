@@ -1,5 +1,7 @@
 # Code Setup Instructions
 
+## NOTE: The code utilizes an AppleScript interface library and will therefore be ineffective when running on a non-Mac OS. For Windows, NirCmd could replace AppleScript.
+
 Create a folder in a known location on your system.
 
 For me, this folder was called "Final Project". Its path was: /Users/spencerhart/Desktop/Digital Signal Processing/Final Project
@@ -23,11 +25,8 @@ Once mediapipe is installed, you can double-check the install and the version:
 
 > pip list
 
-Now, create a new Python file in the same project folder. This is where you will put the main code. I called this file "HART_DSP_FINAL_PROJECT" (.py as the file extension).
+Now, add HART_DSP_FINAL_PROJECT.py to the same project folder. Alternatively, create a new Python file in the same project folder, then paste in the code from HART_DSP_FINAL_PROJECT.py. This is the file you will run to activate the hand recognition, tracking, and volume control.
 
-In this file, paste in the code.
+Next, add hand_landmarker.task to the virtual environment subfolder (once again, mine was called "myenv". Once this file has been added, try running the Python file in the main folder. You should see a live-feed video window appear. If you bring a hand into the frame, it should recognize the hand and overlay a skeleton-like structure with points at fingertips, knuckles, and the palm—these are known as hand landmarks. As you change the distance between your index fingertip and thumbtip, your computer volume should change.
 
-OR, FOR WINDOWS OS: 
-> python -m venv myenv
-> myenv\Scripts\activate
-> pip install mediapipe
+Now try testing it in real-time as a song/audio is playing from your computer!
