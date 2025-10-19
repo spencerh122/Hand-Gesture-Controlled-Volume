@@ -17,11 +17,17 @@ Next:
 
 > source myenv/mybin/activate
 
+> pip3 install mediapipe
 
+Once mediapipe is installed, you can double-check the install and the version:
 
+> pip list
 
+Now, create a new Python file in the same project folder. This is where you will put the main code. I called this file "HART_DSP_FINAL_PROJECT" (.py as the file extension).
 
+In this file, paste in the code.
 
 OR, FOR WINDOWS OS: 
 > python -m venv myenv
 > myenv\Scripts\activate
+> pip install mediapipe
